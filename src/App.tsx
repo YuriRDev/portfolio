@@ -1,10 +1,11 @@
 import React from 'react';
+import Testimonials from './Pages/Testimonials';
+
+//maxwidth 1410
 
 function App() {
   return (
-    <div className="App">
-      Hello World
-    </div>
+    <Testimonials />
   );
 }
 
