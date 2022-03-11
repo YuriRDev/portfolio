@@ -3,7 +3,11 @@ import React from 'react';
 import {
     Container,
     Text,
-    PersonContainer
+    PersonContainer,
+    PersonImg,
+    PersonData,
+    PersonName,
+    PersonStatus
 } from './styles';
 
 const Testimonial: React.FC = () => {
@@ -14,7 +18,15 @@ const Testimonial: React.FC = () => {
             </Text>
 
             <PersonContainer>
-
+                <PersonImg />
+                <PersonData>
+                    <PersonName>
+                        Joao silva pedro
+                    </PersonName>
+                    <PersonStatus>
+                        CEO Fintech
+                    </PersonStatus>
+                </PersonData>
             </PersonContainer>
 
         </Container>

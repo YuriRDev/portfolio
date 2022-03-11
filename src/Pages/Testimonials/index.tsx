@@ -37,6 +37,9 @@ const Testimonials: React.FC = () => {
 
             <Main>
                 <Testimonial />
+                <Testimonial />
+                <Testimonial />
+                <Testimonial />
             </Main>
 
         </Container>
