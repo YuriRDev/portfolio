@@ -33,10 +33,31 @@ const Testimonials: React.FC = () => {
             </Header>
 
             <Main>
-                <Testimonial />
-                <Testimonial />
-                <Testimonial />
-                <Testimonial />
+                
+                <Testimonial
+                    name={'Joao Silva'}
+                    status={'CEO Fintech'}
+                    description={'Nullam porttitor condimentum dui malesuada mauris gravida litora amet curabitur eu risus donec commodo facilisis, vivamus potenti aenean tellus ornare vitae rhoncus curabitur fermentum torquent eros quam nibh.'}
+                />
+
+                <Testimonial
+                    name={'Pedro Duarte'}
+                    status={'Senior FrontEnd'}
+                    description={'Donec commodo facilisis, vivamus potenti aenean tellus ornare vitae rhoncus curabitur fermentum torquent eros quam nibh.'}
+                />
+
+                <Testimonial
+                    name={'Pedro cabral'}
+                    status={'ABCDEF'}
+                    description={'Risus donec commodo facilisis, vivamus potenti aenean tellus ornare vitae rhoncus curabitur fermentum torquent eros quam nibh.'}
+                />
+                
+                <Testimonial
+                    name={'Eduardo Rossi'}
+                    status={'Manager at fintech'}
+                    description={'Nullam porttitor condimentum dui malesuada mauris gravida litora amet curabitur eu risus.'}
+                />
+                
             </Main>
 
         </Container>

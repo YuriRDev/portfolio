@@ -10,22 +10,22 @@ import {
     PersonStatus
 } from './styles';
 
-const Testimonial: React.FC = () => {
+interface TestimonialInterface {
+    description: string;
+    name: string;
+    status: string;
+}
+
+const Testimonial: React.FC<TestimonialInterface> = ({description, name, status}) => {
     return (
         <Container>
-            <Text>
-                Nullam porttitor condimentum dui malesuada mauris gravida litora amet curabitur eu risus donec commodo facilisis, vivamus potenti aenean tellus ornare vitae rhoncus curabitur fermentum torquent eros quam nibh.
-            </Text>
+            <Text>{description}</Text>
 
             <PersonContainer>
                 <PersonImg />
                 <PersonData>
-                    <PersonName>
-                        Joao silva pedro
-                    </PersonName>
-                    <PersonStatus>
-                        CEO Fintech
-                    </PersonStatus>
+                    <PersonName>{name}</PersonName>
+                    <PersonStatus>{status}</PersonStatus>
                 </PersonData>
             </PersonContainer>
 

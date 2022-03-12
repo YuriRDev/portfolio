@@ -12,7 +12,7 @@ export const Container = styled.div`
     margin-bottom: 32px;
     @media(max-width: 640px) {
         width: 100%;
-        padding: 16px;
+        padding: 12px 16px;
         margin-bottom: 24px;
     }
 `
@@ -24,6 +24,7 @@ export const Text = styled.text`
 
     @media(max-width: 640px) {
         font-size: 12px;
+        line-height: 4px;
     }
 `
 
@@ -34,7 +35,7 @@ export const PersonContainer = styled.div`
     margin-top: 18px;
 
     @media(max-width: 640px) {
-        margin-top: 16px;
+        margin-top: 14px;
     }
 `
 
@@ -43,8 +44,10 @@ export const PersonImg = styled.div`
     width: 48px;
     background-color: ${COLORS.Black3};
     border-radius: 100%;
-    outline: 1px solid ${COLORS.Primary};
-    border: 2px solid ${COLORS.Background};
+
+    border: 1px solid #151619;
+    filter: drop-shadow(-1px -1px 0px #FF6D00);
+    
     margin-right: 16px;
     @media(max-width: 640px) {
         height: 36px;
