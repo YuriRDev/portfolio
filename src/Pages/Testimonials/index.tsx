@@ -6,6 +6,7 @@ import testimonial from '../../Assets/testimonial.svg'
 import {
     Container,
     Header,
+    IconImg,
     Title,
     Subtitle,
     Tag,
@@ -18,12 +19,8 @@ const Testimonials: React.FC = () => {
     return (
         <Container>
             <Header>
-                <img
+                <IconImg
                     src={testimonial}
-                    style={{
-                        height: 40,
-                        width: 55
-                    }}
                 />
 
                 <Title>Testimonials</Title>
