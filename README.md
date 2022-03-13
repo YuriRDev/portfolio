@@ -1,4 +1,12 @@
 # ⚒ Coding in progress
-*Portfolio*
+*Come back in a few days*
 
-**Come back in a few days**
+🚘 **To-do**
+
+
+- [x]  Testimonials
+- [ ]  Main 
+- [ ]  Stacks 
+- [ ]  About me
+- [ ]  Last projects
+

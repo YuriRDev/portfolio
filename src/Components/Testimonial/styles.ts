@@ -10,11 +10,21 @@ export const Container = styled.div`
     width: 600px;
     padding: 24px 32px;
     margin-bottom: 32px;
-    @media(max-width: 640px) {
+
+    @media(max-width: 1200px) {
+        width: 550px;
+    }
+
+    @media(max-width: 990px) {
+        width: 600px;
+    }
+
+    @media(max-width: 760px) {
         width: 100%;
         padding: 12px 16px;
         margin-bottom: 24px;
     }
+
 `
 
 export const Text = styled.text`
@@ -22,7 +32,7 @@ export const Text = styled.text`
     font-weight: 300;
     color: #F7F2FA;
 
-    @media(max-width: 640px) {
+    @media(max-width: 760px) {
         font-size: 12px;
         line-height: 4px;
     }
@@ -34,7 +44,7 @@ export const PersonContainer = styled.div`
     justify-content: flex-start;
     margin-top: 18px;
 
-    @media(max-width: 640px) {
+    @media(max-width: 760px) {
         margin-top: 14px;
     }
 `
@@ -49,7 +59,7 @@ export const PersonImg = styled.div`
     filter: drop-shadow(-1px -1px 0px #FF6D00);
     
     margin-right: 16px;
-    @media(max-width: 640px) {
+    @media(max-width: 760px) {
         height: 36px;
         width: 36px;
     }
@@ -68,7 +78,7 @@ export const PersonData = styled.div`
 export const PersonName = styled.text`
     font-size: 16px;
     font-weight: 400;
-    @media(max-width: 640px) {
+    @media(max-width: 760px) {
         font-size: 14px;
     }
 
@@ -77,7 +87,7 @@ export const PersonStatus = styled.text`
     font-size: 14px;
     font-weight: 600;
     color: ${COLORS.Gray1};
-    @media(max-width: 640px) {
+    @media(max-width: 760px) {
         font-size: 12px;
     }
 `

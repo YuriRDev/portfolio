@@ -13,13 +13,29 @@ export const Container = styled.div`
     margin-left: auto;
     margin-right: auto;
 
-    @media(max-width: 640px) {
+
+    @media(max-width: 1120px) {
+        width: 100%;
+        padding: 0px 20px;
+    }
+    
+    @media(max-width: 990px) {
+        width: 100%;
+        padding: 0px 20px;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    @media(max-width: 760px) {
         width: 100%;
         flex-direction: column;
         justify-content: flex-start;
         margin-top: 88px;
         padding: 0px 20px;
     }
+
+    
 `
 
 export const Header = styled.header`
@@ -30,7 +46,13 @@ export const Header = styled.header`
     flex-direction: column;
 
     position: sticky;
-    @media(max-width: 640px) {
+
+    @media(max-width: 990px) {
+        position: relative;
+        margin-bottom: 48px;
+    }
+
+    @media(max-width: 760px) {
         position: relative;
         margin-bottom: 48px;
     }
@@ -41,7 +63,7 @@ export const IconImg = styled.img`
     height: 40px;
     width: 55px;
 
-    @media(max-width: 640px) {
+    @media(max-width: 760px) {
         height: 23px;
         width: 31px;
     }
@@ -55,7 +77,7 @@ export const Title = styled.text`
     font-size: 32px;
     font-weight: 600;
 
-    @media(max-width: 640px) {
+    @media(max-width: 760px) {
         font-size: 18px;
     }
     
@@ -66,7 +88,7 @@ export const Subtitle = styled.text`
     color: ${COLORS.Gray1};
     margin-top: 4px;
 
-    @media(max-width: 640px) {
+    @media(max-width: 760px) {
         font-size: 14px;
     }
 `
@@ -79,7 +101,7 @@ export const Tag = styled.div`
     padding: 12px 18px;
     margin-top: 24px;
 
-    @media(max-width: 640px) {
+    @media(max-width: 760px) {
         font-size: 12px;
         margin-top: 16px;
     }
