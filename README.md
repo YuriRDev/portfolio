@@ -3,10 +3,9 @@
 
 🚘 **To-do list**
 
-
-- [x]  Testimonials
 - [ ]  Main 
+- [x]  Testimonials
+- [ ]  Last projects
 - [ ]  Stacks 
 - [ ]  About me
-- [ ]  Last projects
 
