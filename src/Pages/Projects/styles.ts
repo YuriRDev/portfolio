@@ -35,6 +35,10 @@ export const Header = styled.header`
     
 `
 
+export const HeaderTitle = styled.div`
+    
+`
+
 export const Icon = styled.img`
     height: 36px;
     width: 28px;

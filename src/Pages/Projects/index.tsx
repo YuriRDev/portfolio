@@ -1,9 +1,13 @@
 import React from 'react';
 
+import projects from '../../Assets/projects.svg'
+
 import { 
     Container, 
     HalfCircle,
-    Header
+    Header,
+    HeaderTitle,
+    Icon
  } from './styles';
 
 const Projects: React.FC = () => {
@@ -11,7 +15,11 @@ const Projects: React.FC = () => {
     <Container>
       <HalfCircle/>
       <Header>
-          
+          <HeaderTitle>
+              <Icon 
+                src={projects}
+              />
+          </HeaderTitle>
       </Header>
     </Container>
   );
