@@ -5,7 +5,8 @@
 
 - [ ]  Main 
 - [x]  Testimonials
-- [ ]  Last projects
+- [x]  Last projects
+*Missing photos 😁*
 - [ ]  Stacks 
 - [ ]  About me
 
