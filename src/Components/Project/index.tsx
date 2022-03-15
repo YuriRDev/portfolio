@@ -1,31 +1,41 @@
 import React from 'react';
 
-import { ArrowImg, Container, DateRange, Divider, NameContainer, Tag } from './styles';
+import {
+  ArrowImg,
+  Container,
+  DateRange,
+  Divider,
+  NameContainer,
+  Tag,
+} from './styles';
 
-import arrowleft from '../../Assets/arrowleft.svg'
+import arrowleft from '../../Assets/arrowleft.svg';
 
 interface ProjectsInterface {
-    name: string;
-    href?: string;
-    tag: string; 
-    daterange: string;
+  name: string;
+  href?: string;
+  tag: string;
+  daterange: string;
 }
 
-const Project: React.FC<ProjectsInterface> = ({name, href, tag, daterange}) => {
+const Project: React.FC<ProjectsInterface> = ({
+  name,
+  href,
+  tag,
+  daterange,
+}) => {
   return (
     <Container>
-        <Tag>{tag}</Tag>
+      <Tag>{tag}</Tag>
 
-        <NameContainer>
-            {name}
-            <ArrowImg 
-                src={arrowleft}
-            />
-        </NameContainer>
+      <NameContainer>
+        {name}
+        <ArrowImg src={arrowleft} />
+      </NameContainer>
 
-        <Divider />
+      <Divider />
 
-        <DateRange>{daterange}</DateRange>
+      <DateRange>{daterange}</DateRange>
     </Container>
   );
 };

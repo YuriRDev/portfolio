@@ -28,20 +28,20 @@ const Projects: React.FC = () => {
           </Header>
         </div>
         <ProjectsContainer>
-          <Project 
-            tag='UI Design'
-            name='Lorem Ypsum Dores'
-            daterange='March 22, 2022 - April 1, 2022'
+          <Project
+            tag="UI Design"
+            name="Lorem Ypsum Dores"
+            daterange="March 22, 2022 - April 1, 2022"
           />
-          <Project 
+          <Project
             tag={`UI Design & Front-end `}
-            name='Lorem sit amet'
-            daterange='March 22, 2022 - April 1, 2022'
+            name="Lorem sit amet"
+            daterange="March 22, 2022 - April 1, 2022"
           />
-          <Project 
-            tag='Front-End'
-            name='Sit Lorem Creato'
-            daterange='March 22, 2022 - April 1, 2022'
+          <Project
+            tag="Front-End"
+            name="Sit Lorem Creato"
+            daterange="March 22, 2022 - April 1, 2022"
           />
         </ProjectsContainer>
       </InsideContainer>

@@ -35,8 +35,7 @@ export const InsideContainer = styled.div`
   margin-right: auto;
 
   height: 100%;
-
-`
+`;
 
 export const HalfCircle = styled.div`
   height: 56px;
@@ -77,4 +76,4 @@ export const ProjectsContainer = styled.main`
   justify-content: flex-start;
   flex-direction: column;
   margin-top: 124px;
-`
+`;
