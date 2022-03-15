@@ -10,6 +10,8 @@ export const Container = styled.div`
     
     color: ${COLORS.Gray2};
 
+    margin-bottom: 48px;
+
     cursor: pointer;
 `
 

@@ -4,13 +4,20 @@ import { ArrowImg, Container, DateRange, Divider, NameContainer, Tag } from './s
 
 import arrowleft from '../../Assets/arrowleft.svg'
 
-const Project: React.FC = () => {
+interface ProjectsInterface {
+    name: string;
+    href?: string;
+    tag: string; 
+    daterange: string;
+}
+
+const Project: React.FC<ProjectsInterface> = ({name, href, tag, daterange}) => {
   return (
     <Container>
-        <Tag>UI Design</Tag>
+        <Tag>{tag}</Tag>
 
         <NameContainer>
-            {`Lorem Ypsum dolor sit`}
+            {name}
             <ArrowImg 
                 src={arrowleft}
             />
@@ -18,7 +25,7 @@ const Project: React.FC = () => {
 
         <Divider />
 
-        <DateRange>March 22, 2022 - April 1, 2022</DateRange>
+        <DateRange>{daterange}</DateRange>
     </Container>
   );
 };
