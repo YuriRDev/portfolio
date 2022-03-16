@@ -4,7 +4,12 @@ import Stacks from './Pages/Stacks';
 import Testimonials from './Pages/Testimonials';
 
 function App() {
-  return <Projects />;
+  return (
+    <div>
+      <Projects />
+      <Testimonials />
+    </div>
+  );
 }
 
 export default App;

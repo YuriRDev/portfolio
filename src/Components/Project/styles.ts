@@ -13,6 +13,18 @@ export const Container = styled.div`
   margin-bottom: 48px;
 
   cursor: pointer;
+
+  @media (max-width: 1200px) {
+    width: 450px;
+  }
+
+  @media (max-width: 990px) {
+    width: 600px;
+  }
+
+  @media (max-width: 760px) {
+    width: 100%;
+  }
 `;
 
 export const Tag = styled.text`

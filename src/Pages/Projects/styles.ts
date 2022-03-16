@@ -34,6 +34,27 @@ export const InsideContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
 
+  @media (max-width: 1140px) {
+    width: 100%;
+    padding: 0px 20px;
+  }
+
+  @media (max-width: 990px) {
+    width: 100%;
+    padding: 0px 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  @media (max-width: 760px) {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 88px;
+    padding: 0px 20px;
+  }
+
   height: 100%;
 `;
 
@@ -53,6 +74,9 @@ export const Header = styled.header`
   flex-direction: column;
   font-size: 18px;
   color: ${COLORS.Black4};
+  @media (max-width: 760px) {
+    font-size: 14px;
+  }
 `;
 
 export const HeaderTitle = styled.div`
@@ -76,4 +100,9 @@ export const ProjectsContainer = styled.main`
   justify-content: flex-start;
   flex-direction: column;
   margin-top: 124px;
+
+  @media (max-width: 760px) {
+    width: 100%;
+    margin-top: 80px;
+  }
 `;
