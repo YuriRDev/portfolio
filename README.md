@@ -9,3 +9,4 @@
 - [ ]  Stacks 
 - [ ]  About me
 
+- [ ]  Animations w/Framer-Motion
