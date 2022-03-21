@@ -3,6 +3,9 @@ import React from 'react';
 import projects from '../../Assets/projects.svg';
 import Project from '../../Components/Project';
 
+import { useInView } from 'react-intersection-observer';
+import { motion, useAnimation } from 'framer-motion';
+
 import {
   Container,
   HalfCircle,
@@ -14,16 +17,39 @@ import {
 } from './styles';
 
 const Projects: React.FC = () => {
+  const titleAnimation = useAnimation();
+  const descriptionAnimation = useAnimation();
+
+  titleAnimation.start({
+    y: 0,
+    opacity: 1,
+    transition: { ease: 'easeIn', duration: 0.4 },
+  });
+
+  descriptionAnimation.start({
+    y: 0,
+    opacity: 1,
+    transition: { ease: 'easeIn', duration: 0.4 },
+  });
+
   return (
     <Container>
       <HalfCircle />
       <InsideContainer>
         <div>
           <Header>
-            <HeaderTitle>
-              <Icon src={projects} />
-              Last Projects
-            </HeaderTitle>
+            <motion.div
+              initial={{
+                y: 10,
+                opacity: 0,
+              }}
+              animate={titleAnimation}
+            >
+              <HeaderTitle>
+                <Icon src={projects} />
+                Last Projects
+              </HeaderTitle>
+            </motion.div>
             Here a few designs/codes that <br /> i've worked on.
           </Header>
         </div>
