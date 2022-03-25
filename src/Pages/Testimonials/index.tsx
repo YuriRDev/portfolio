@@ -1,6 +1,7 @@
 import React from 'react';
 
 import testimonial from '../../Assets/testimonial.svg';
+import { motion, useAnimation } from 'framer-motion';
 
 import {
   Container,
@@ -15,16 +16,53 @@ import {
 import Testimonial from '../../Components/Testimonial';
 
 const Testimonials: React.FC = () => {
+  const titleAnimation = useAnimation();
+  const descriptionAnimation = useAnimation();
+  const tagAnimation = useAnimation();
+
+  titleAnimation.start({
+    y: 0,
+    opacity: 1,
+    transition: { ease: 'easeIn', duration: 0.3 },
+  });
+
+  descriptionAnimation.start({
+    y: 0,
+    opacity: 1,
+    transition: { ease: 'easeIn', duration: 0.4, delay: 0.3 },
+  });
+
+  tagAnimation.start({
+    y: 0,
+    x: 0,
+    opacity: 1,
+    transition: { ease: 'easeIn', duration: 0.4, delay: 0.3 },
+  });
+
   return (
     <Container>
       <Header>
         <IconImg src={testimonial} />
-
-        <Title>Testimonials</Title>
-        <Subtitle>
-          Don't take my word for it... <br /> Look at those!{' '}
-        </Subtitle>
-
+        <motion.div
+          initial={{
+            y: 10,
+            opacity: 0,
+          }}
+          animate={titleAnimation}
+        >
+          <Title>Testimonials</Title>
+        </motion.div>
+        <motion.div
+          initial={{
+            y: -10,
+            opacity: 0,
+          }}
+          animate={descriptionAnimation}
+        >
+          <Subtitle>
+            Don't take my word for it... <br /> Look at those!{' '}
+          </Subtitle>
+        </motion.div>
         <Tag>{'+20 Projects in the last month!'}</Tag>
       </Header>
 
