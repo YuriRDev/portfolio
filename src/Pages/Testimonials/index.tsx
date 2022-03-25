@@ -36,7 +36,7 @@ const Testimonials: React.FC = () => {
     y: 0,
     x: 0,
     opacity: 1,
-    transition: { ease: 'easeIn', duration: 0.4, delay: 0.3 },
+    transition: { ease: 'easeIn', duration: 0.4, delay: 0.7 },
   });
 
   return (
@@ -63,7 +63,15 @@ const Testimonials: React.FC = () => {
             Don't take my word for it... <br /> Look at those!{' '}
           </Subtitle>
         </motion.div>
-        <Tag>{'+20 Projects in the last month!'}</Tag>
+        <motion.div
+          initial={{
+            x: -10,
+            opacity: 0,
+          }}
+          animate={tagAnimation}
+        >
+          <Tag>{'+20 Projects in the last month!'}</Tag>
+        </motion.div>
       </Header>
 
       <Main>
