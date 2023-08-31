@@ -9,6 +9,7 @@ const App: React.FC = () => {
   return (
     <>
       <Main />
+      <AboutMe />
       <Projects />
     </>
   );

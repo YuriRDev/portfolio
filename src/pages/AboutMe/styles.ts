@@ -2,8 +2,7 @@ import { styled } from "styled-components";
 import COLORS from "../../colors";
 
 export const Container = styled.div`
-  background: linear-gradient(180deg, #16161a 0%, #242629 24.44%);
-
+  background-color: ${COLORS.dark.bg};
 
   height: 100vh;
   display: flex;
@@ -20,3 +19,34 @@ export const Inside = styled.div`
 
   margin-top: 160px;
 `;
+
+export const LeftSide = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  p {
+    width: 33%;
+    color: ${COLORS.dark.gray};
+    font-family: Montserrat;
+    font-weight: 500;
+    margin-top: 24px;
+    line-height: 130%;
+    font-size: 18px;
+
+    span {
+      cursor: pointer;
+      transition: .2s;
+      &:hover {
+        font-weight: 600;
+        color: #f74c00;
+      }
+    }
+  }
+`;
+
+
+export const RightSide = styled.div`
+  
+`
