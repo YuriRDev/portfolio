@@ -17,44 +17,19 @@ export const Container = styled.div`
 
   height: 100vh;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-`;
-
-export const Inside = styled.div`
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  max-width: 1170px;
-  width: 100%;
-
-  margin-top: 160px;
-`;
-
-export const TextArea = styled.div`
-  display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   flex-direction: column;
 
-  line-height: 100%;
-
-  h3 {
-    color: ${COLORS.dark.gray};
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 20px;
-  }
-
+  padding-top: 128px;
   h1 {
-    font-size: 40px;
+    font-family: Montserrat;
+    font-size: 36px;
+    text-align: center;
+    color: ${COLORS.dark.white};
+    span {
+      color: ${COLORS.dark.primary};
+    }
     font-weight: 600;
-  }
-
-  p {
-    font-size: 16px;
-    margin-top: 32px;
-    font-weight: 400;
-    color: ${COLORS.dark.gray};
   }
 `;
