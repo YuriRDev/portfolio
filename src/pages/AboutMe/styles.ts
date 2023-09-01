@@ -8,6 +8,8 @@ export const Container = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: center;
+
+  border-top: solid 4px ${COLORS.dark.bgLight};
 `;
 
 export const Inside = styled.div`
@@ -25,9 +27,9 @@ export const LeftSide = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+  width: 33%;
 
   p {
-    width: 33%;
     color: ${COLORS.dark.gray};
     font-family: Montserrat;
     font-weight: 500;
@@ -37,7 +39,7 @@ export const LeftSide = styled.div`
 
     span {
       cursor: pointer;
-      transition: .2s;
+      transition: 0.2s;
       &:hover {
         font-weight: 600;
         color: #f74c00;
@@ -46,7 +48,10 @@ export const LeftSide = styled.div`
   }
 `;
 
-
 export const RightSide = styled.div`
-  
-`
+  width: 50%;
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-between;
+`;
