@@ -12,6 +12,7 @@ export const Container = styled.div`
   margin-left: 18px;
 
   padding: 8px 24px;
+  border-radius: 4px;
 
   img {
     height: 26px;
@@ -25,5 +26,13 @@ export const Container = styled.div`
     color: ${COLORS.dark.white};
     font-weight: 500;
     font-family: Inter;
+  }
+
+  // effecst
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    border-radius: 10px;
+    transform: scale(1.1);
   }
 `;
